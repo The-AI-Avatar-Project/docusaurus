@@ -17,7 +17,7 @@
 ### 01.05.2025 – Team-Arbeitstreffen
 - Vorstellung der finalen Use Cases
 - Präsentation erster Teilergebnisse durch alle Teams
-    - **Videofeed**: Erstaifschlag unterschiedlicher tootl mimictalk, sadtalker, 
+    - **Videofeed**: Erstaufschlag unterschiedlicher tootl mimictalk, sadtalker, 
     - **Frontend**: Erste UI idee 
     - **TTS / STT**: Unterschidelichste TTS und STT services
     - **Backend**: Erster python backendansatz mit whisper
@@ -40,5 +40,21 @@
 - Python als backend wurd revidier und auf Java geeinigt. 
 - Docusaurus als project seite festgelegt
 
+### 09.05.2025 - Team-Arbeitstreffen
+- Präsentation der bisherigen Ergebnisse
+    - **Videofeed**: MimicTalk und SadTalker wurden ausgeschlossen. Drei neue Ansätze sind aktuell in Arbeit:
+        1. **Minimalansatz**: Steuerung über Lautstärkepegel und zwei festgelegte Frames (z. B. neutral und sprechend).
+        2. **Phonem-basierter Ansatz**: Nutzung von Phoneminformationen für differenziertere Mimik.
+        3. **Wave2Lip**: Visuell realistischere Lippenbewegungssynchronisation (wird derzeit getestet).
+    - **Frontend**: Intensivierter Austausch und Planung zur weiteren Umsetzung.
+    - **TTS / STT**: Weitere lokal laufende TTS-Projekte wurden gesammelt und dokumentiert.
+    - **Backend**: Erste Experimente mit ChromaDB und LangChain durchgeführt.
+- ToDos: 
+    - **Videofeed**: Wave2Lip wird noch bis zu 7 Tage getestet. Falls kein zufriedenstellendes Ergebnis, erfolgt die Weiterarbeit an den beiden Minimalansätzen.
+    - **Frontend**: Erste Umsetzung des UI geplant (möglicherweise mit PrimeNG-Framework, noch offen); zusätzlich ist mindestens eine OpenAI-Chat-Verbindung vorgesehen, um das Mocken von Textinhalten zu ermöglichen.
+    - **TTS / STT**: Verschiedene TTS Systeme testweise lauffähig machen und Feedback einholen, welches alle Anforderungen erfüllt.
+    - **Backend**: Umsetzung des ersten Backend-Abschnitts: Datenbank, Google Text-to-Speech, Whisper. (Google Text-to-Speech zum mocken keine finale entscheidung)
+- Eröffnete disukssuion:
+    - Das Thema Nutzer-Login wurde angeschnitten. Perspektivisch wird in Betracht gezogen, später eventuell Keycloak einzusetzen – alternativ wird geprüft, inwiefern die vorhandenen Spring Boot-Funktionalitäten dafür ausreichen.
 
 ---
