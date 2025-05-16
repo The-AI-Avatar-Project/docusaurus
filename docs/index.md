@@ -45,16 +45,41 @@
     - **Videofeed**: MimicTalk und SadTalker wurden ausgeschlossen. Drei neue Ansätze sind aktuell in Arbeit:
         1. **Minimalansatz**: Steuerung über Lautstärkepegel und zwei festgelegte Frames (z. B. neutral und sprechend).
         2. **Phonem-basierter Ansatz**: Nutzung von Phoneminformationen für differenziertere Mimik.
-        3. **Wave2Lip**: Visuell realistischere Lippenbewegungssynchronisation (wird derzeit getestet).
+        3. **wav2Lip**: Visuell realistischere Lippenbewegungssynchronisation (wird derzeit getestet).
     - **Frontend**: Intensivierter Austausch und Planung zur weiteren Umsetzung.
     - **TTS / STT**: Weitere lokal laufende TTS-Projekte wurden gesammelt und dokumentiert.
     - **Backend**: Erste Experimente mit ChromaDB und LangChain durchgeführt.
 - ToDos: 
-    - **Videofeed**: Wave2Lip wird noch bis zu 7 Tage getestet. Falls kein zufriedenstellendes Ergebnis, erfolgt die Weiterarbeit an den beiden Minimalansätzen.
+    - **Videofeed**: wav2Lip wird noch bis zu 7 Tage getestet. Falls kein zufriedenstellendes Ergebnis, erfolgt die Weiterarbeit an den beiden Minimalansätzen.
     - **Frontend**: Erste Umsetzung des UI geplant (möglicherweise mit PrimeNG-Framework, noch offen); zusätzlich ist mindestens eine OpenAI-Chat-Verbindung vorgesehen, um das Mocken von Textinhalten zu ermöglichen.
     - **TTS / STT**: Verschiedene TTS Systeme testweise lauffähig machen und Feedback einholen, welches alle Anforderungen erfüllt.
     - **Backend**: Umsetzung des ersten Backend-Abschnitts: Datenbank, Google Text-to-Speech, Whisper. (Google Text-to-Speech zum mocken keine finale entscheidung)
 - Eröffnete disukssuion:
     - Das Thema Nutzer-Login wurde angeschnitten. Perspektivisch wird in Betracht gezogen, später eventuell Keycloak einzusetzen – alternativ wird geprüft, inwiefern die vorhandenen Spring Boot-Funktionalitäten dafür ausreichen.
+
+### 16.05.2025 – Team-Arbeitstreffen
+- Die Teams arbeiten produktiv weiter:
+    - **Videofeed**:  
+        - Leon setzt den Minimalansatz technisch um (Lautstärke + zwei Frames).  
+        - Andreas arbeitet an einer streambaren Variante von wav2Lip.  
+    - **Frontend**:  
+        - Erster UI-Prototyp erfolgreich umgesetzt.  
+        - Direkte Anbindung an OpenAI ChatGPT und ElevenLabs TTS integriert.  
+    - **TTS / STT**:  
+        - Weitere Recherchearbeit zu lokal ausführbaren TTS-Systemen.  
+    - **Backend**:  
+        - Präsentation des internen Workflows „**RACK**“ (Recherche, Aufbau, Codierung, Konsolidierung).  
+        - Vorstellung von **Spring AI** als Alternative zu LangChain.  
+        - **PGVector** als PostgreSQL-basierte Vektor-Datenbankalternative zu ChromaDB diskutiert.  
+- ToDos:
+    - **Videofeed**:  
+        - Leon und Nils integrieren den Minimalansatz ins Backend.  
+        - Andreas arbeitet weiter am Streamingansatz mit wav2Lip.  
+    - **TTS / STT**:  
+        - Fokus auf Coqui: Erste lauffähige lokale Instanz soll erstellt werden.  
+    - **Frontend**:  
+        - Git-Repository anlegen.  
+        - Erste Anbindungen zum Backend implementieren (abhängig vom Fortschritt des Backend-Teams).  
+
 
 ---
