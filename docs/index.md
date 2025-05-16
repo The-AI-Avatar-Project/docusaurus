@@ -68,7 +68,7 @@
     - **TTS / STT**:  
         - Weitere Recherchearbeit zu lokal ausführbaren TTS-Systemen.  
     - **Backend**:  
-        - Präsentation des internen Workflows „**RACK**“ (Recherche, Aufbau, Codierung, Konsolidierung).  
+        - Präsentation des internen Workflows „**RAG**“ (Retreval-Augmented Generation).  
         - Vorstellung von **Spring AI** als Alternative zu LangChain.  
         - **PGVector** als PostgreSQL-basierte Vektor-Datenbankalternative zu ChromaDB diskutiert.  
 - ToDos:
@@ -80,6 +80,8 @@
     - **Frontend**:  
         - Git-Repository anlegen.  
         - Erste Anbindungen zum Backend implementieren (abhängig vom Fortschritt des Backend-Teams).  
+    - **Backend**:
+        - Nils stellt Endpoints bereit, um über Sprache und Chat mit dem Chatbot zu interagieren.
 
 
 ---
