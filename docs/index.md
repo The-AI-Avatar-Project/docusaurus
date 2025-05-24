@@ -83,5 +83,49 @@
     - **Backend**:
         - Nils stellt Endpoints bereit, um über Sprache und Chat mit dem Chatbot zu interagieren.
 
+### 19.05.2025 - Vorstellung beim Professor
+- Jedes Teammitglied hat den eigenen Fortschritt vorgestellt.
+- Die Evaluationsstrategie im Hinblick auf die Kosten wurde präsentiert:
+    - Professoren sollen befragt werden, wie viele Routinefragen sie üblicherweise erhalten und wie lange die Bearbeitung durchschnittlich dauert.
+    - Daraus sollen die potenziellen Einsparungen gegenüber den laufenden Systemkosten pro Jahr bzw. Semester berechnet werden.
+- Daraus sollen die potenziellen Einsparungen gegenüber den laufenden Systemkosten pro Jahr bzw. Semester berechnet werden. 
+    -Dies ist jedoch aufwendiger umzusetzen und könnte die Entwicklungszeit entsprechend verlängern. Eine Entscheidung dazu steht noch aus (TBD).
+- Potenzielle Probleme im Zusammenhang mit Voice Cloning wurden thematisiert (siehe Riklog vom 16.05.2025):
+    - Der Professor erkundigte sich nach einer möglichen Kostenübernahme für die Nutzung von ElevenLabs.
+    - Bevorzugt wurde jedoch von ihm eine eigenständig gehostete Lösung.
+- Die Frage, wie man das Budget bzw. die Token-Nutzung bei OpenAI beobachten kann, wurde gestellt. Der Professor wird diesbezüglich Rücksprache mit der IT halten.
+
+
+Es wurde die Evaluationsstrategie auf kosten vorgestellt (Profs fragen wieviele routine fragen sioe bekommen wie lange es dauert eine abzuarbeiten kosten berechen vs laufende kosten des systems pro jahr / semesters)
+Einwurf das man irgendwie noch die qualität der antworten analysieren sollte tbd da dies aufwendoiger ist und dementsprechend die entwicklungszeit reduziert werden würde. 
+Hingewiesen auf potenzielle probleme mit voicecloning wurden angesprochen (Riklog 16.05.2025) -> Professor fragt nach bezüglich kosten übernahme bei Elevenlabs präferert allerdings eine eigen gehostste umsetzung
+Frage tokennutzung wie können wir die kosten ermitteln wurde angesprochen 
+
+### 23.05.2025 – Team-Arbeitstreffen
+- Die Teams arbeiten produktiv weiter:
+    - **Videofeed**:  
+        - Leon keine großen änderungen an dem minimal video feed ansatz
+        - Andreas hat vorerst den Wav2Lip-Ansatz abgeschlossen. Für den V2-Ansatz hängt die weitere Entwicklung von den Ergebnissen von Leon ab.
+    - **Frontend**:  
+        - Zwei Mockups wurden von Silas und Okan erstellt. Es wurde entschieden, den Ansatz von Silas zu übernehmen, da er bereits erfolgreich die Verbindung zum Backend umsetzen konnte.
+        - Einschäzung Okans war es das der quellcode vernüftig umgesetzt ist von Silas und das keine größeren schwieigkeiten bei der zusammenarbeit entsehen sollten.
+    - **TTS / STT**:  
+        - Erste Erfolge beim Testen von Coqui und OpenVoice.
+    - **Backend**:  
+        - Die Umsetzung des "Daten hinterlegen"-Features sowie das Abrufen via RAG ist erfolgreich eingebaut.
+- ToDos:
+    - **Videofeed**:  
+        - Leon arbeitet mit dem Backend-Team daran, einen Live-Feed möglich zu machen.
+        - Andreas wechselt in das neue Arbeitspaket "Keycloak-Umsetzung".
+    - **TTS / STT**:  
+        - Coqui und OpenVoice in Container einarbeiten, um sie später im Backend nutzbar zu machen.
+    - **Frontend**:  
+        - Videofeed in die UI einbinden.
+        - Mockup planen, wie Referenzen auf Dokumente dargestellt werden sollen.
+        - Evaluieren, wie man das Mikrofon vom Browser aus ansteuern kann.
+        - Settings planen und erste Implementierung vornehmen, um Dozenten und Studenten (später) unterschiedliche Funktionen bereitzustellen (z. B. Raum anlegen, Sprache auswählen, Räume für Studenten freigeben etc.).
+    - **Backend**:
+        - Videofeed mit Leon einbinden.
+        - Endpoint erstellen, um Professoren-Profile anzulegen (Name + Bild).
 
 ---

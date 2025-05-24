@@ -123,16 +123,16 @@ In der ersten Version des Systems steht die **technische Machbarkeit** im Vorder
 
 Professoren sollen die Möglichkeit haben:
 
-- Einen eigenen Avatar zu erstellen, der als digitales Abbild ihrer Person fungiert.
-- Mindestens eine Wissensquelle (z. B. ein PDF, Foliensatz oder Text) pro Raum zu hinterlegen, um dem Avatar eine Grundlage für Antworten zu geben.
-- Unterschiedliche virtuelle Räume (Kurse) zu eröffnen, in denen jeweils ein eigener Avatar mit spezifischem Wissen agiert.
+- 🔜 Einen eigenen Avatar zu erstellen, der als digitales Abbild ihrer Person fungiert.
+- ✅ Mindestens eine Wissensquelle (z. B. ein PDF, Foliensatz oder Text) pro Raum zu hinterlegen, um dem Avatar eine Grundlage für Antworten zu geben.
+- 🔜 Unterschiedliche virtuelle Räume (Kurse) zu eröffnen, in denen jeweils ein eigener Avatar mit spezifischem Wissen agiert.
 
 ### Funktionen für Studierende
 
 Studierende sollen die Möglichkeit haben:
 
-- Eine einfache Benutzeroberfläche (UI) aufzurufen, über die sie verfügbare Kurse auswählen können.
-- Mit dem Avatar innerhalb eines Kurses zu interagieren, wobei der Avatar nur auf das vom Professor bereitgestellte Wissen in diesem Raum zugreifen kann.
+- 🔜 Eine einfache Benutzeroberfläche (UI) aufzurufen, über die sie verfügbare Kurse auswählen können.
+- 🔜 Mit dem Avatar innerhalb eines Kurses zu interagieren, wobei der Avatar nur auf das vom Professor bereitgestellte Wissen in diesem Raum zugreifen kann.
 
 
 ## MVP v2
