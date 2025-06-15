@@ -128,4 +128,102 @@ Frage tokennutzung wie können wir die kosten ermitteln wurde angesprochen
         - Videofeed mit Leon einbinden.
         - Endpoint erstellen, um Professoren-Profile anzulegen (Name + Bild).
 
+### 30.05.2025 – Ausgefallen da zu viele abwesend waren
+- Seperate mini updates an Anderas nachträglich eingegangen
+- **Videofeed**: Leons minimal ansatz ist präsentaionsreif
+                Andreas Wav2Lip ansatz ist streambar
+                Übereingekommen das ab hier an der einbiundung von wav2lip gearbeitet wird
+- **TTS / STT**:  Dorane und Stelle arbeiten an docker files für coqui un dopenvoice
+- **Frontend** : Silas  und Okan konnten erfolgreich den Videostream und die änderung auf Sockets einbuinden ins frontend
+- **Backend**: Soweit fortgeschritten das jetzt langsam die einbindung vin keycloak backend seitig eingeführt werden kann
+
+
+### 19.05.2025 - Vorstellung beim Professor
+- Jedes Teammitglied hat den eigenen Fortschritt vorgestellt.
+- Doing vom Prof einlesen in den EU AI act 
+
+### Anpassung der aufgaben teilung
+## TTS
+- OpenVoice: Stelle & Nils 
+- Coqui: Andreas & Doriane 
+
+- **Ziel**: Bereitstellung von:
+  - einem Endpoint zur **generierung eines voice embeddings / clones** (parameter: ID, refernz.wav)
+  - einem Endpoint zur **Auswahl einer Stimme** +  **Text-zu-Sprache-Ausgabe**. rückgabe einer wav datei (streaming erstmal zweitrangig da aussteht ob wav2lip in-coming streaming am ende umsetzen kann)
+
+
+
+## Frontend
+### Leon, Silas & Okan
+- Aufgabenverteilung erfolgt im Sub-Team selbstorganisiert.
+- **Ziele**:
+  - Integration des **Mikrofons**
+  - Einstellungen realisieren so weit wie möglich (so viel implementieren wie möglich, so wenig mockup wie nötig)
+  - Planung wie ein Onboarding / setup prozess für neue nutzer Profs aussehen könnte
+
+## Backend
+### Paul
+- Umsetzung eines Endpoints zum **Anlegen von Profilordnern**:
+  - Struktur: `/profile/<Keycloak-User-ID>/`
+  - Inhalte:
+    - Referenzvideos oder Bilddaten für den videofeed.
+    - Später: Embeddings zur Stimmanpassung.
+
+## Frontend / Backend
+### Andreas, Nils
+- KeyCloak verifikation bei request zum laufen bekommen
+
+
+
+## 23.06.2025 – Team-Arbeitstreffen
+
+Die Teams präsentierten ihre Zwischenergebnisse und es erfolgte eine neue Arbeitsteilung:
+
+# TTS / STT  
+- Stella & Nils OpenVoice ergebniss: Nicht funkunell nutzbar für dieses Projekt aufgund von mangelnden Sprach optionen.  
+- Andreas & Dorinae: Coqui wurde erfolgreich mit einer api ansteuerbar gestaltet und an Nils weitergegeben für das backend.
+# Videofeed  
+- Wav2Lip wurde erfolgreich mit einer api ansteuerbar gestaltet und an Nils weitergegeben für das backend.
+
+# Frontend (Team: Okan, Silas & Leon)  
+- Silas präsentierte die überarbeitete Hauptseite welche nun jahre / Professoren / Kurse strukturiert darstellt.
+- Okan stellte die Einstellungsseite vor, umgesetzt mit PrimeNG.  
+  - Entscheidung: Hauptseite bleibt Custom CSS, alle weiteren Komponenten werden mit PrimeNG umgesetzt / angepasst.  
+- Leon demonstrierte die funktionale Mikrofonanbindung im Frontend (derzeit noch via externer API).
+
+# Backend  
+- Nils hat Wav2Lip und Coqui im Backend integriert.  
+- Die durchgehende Sprach-/Videopipeline ist fast vollständig funktionsfähig.  
+- Erste Schritte nuzung von Keycloak sind erfolgt.
+
+# ToDos:
+
+**Andreas**
+- Setup-Skripte für KeyCloak anpassen (Struktur Jahr/Prof Name/ Kursname und das setzen von icon tags)
+- Unterstützung bei der Frontend-Keycloak-Integration.
+
+**Silas**
+- Integration seiner Hauptseite mit Keycloak.
+- KeyCloak token nutzen und verarbeiten um Gruppen zugehörigkeit einzulesen. 
+
+**Okan**
+- Umsetzung der Einstellungen-UI mit PrimeNG.
+- Konzeption des Prozesses für Raum erstellung, Nutzer einladen, Daten hinterlegen (Mockup endpoints nutzen aber implementieren mit PrimeNG)
+- Konzeption des Prozesses Profil anlegen (Professor) (Bild speichern , referenz stimme hochladen, (Mockup endpoints nutzen aber implementieren mit PrimeNG)).
+- Zusammenarbeit mit Nils zur Definition der Backend-Endpunkte für Profil- und Raumgenerierung (Falls Nils die Kapas dafür hat diese woche).
+
+**Leon**
+- Weiterentwicklung der Mikrofonanbindung im Frontend.
+- Integration mit dem echten Backend zur Sprachverarbeitung.
+
+**Nils**
+- Verfeinerung der Backend-Endpunkte für Audio- und Videoverarbeitung.
+- Überarbeitung der README.
+- Nach Abschluss der obigen Aufgaben: Zusammenarbeit mit Okan zur Umsetzung der Profil- und Raum-Endpunkte.
+
+**Doriane & Stella**
+- Analyse des European AI Act:
+  - Welche Kennzeichnungspflichten gelten für KI-generierte Videos?
+  - Reicht ein Hinweis in der Fußnote oder ist ein Watermark erforderlich?
+
 ---
