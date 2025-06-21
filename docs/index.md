@@ -175,7 +175,7 @@ Frage tokennutzung wie können wir die kosten ermitteln wurde angesprochen
 
 
 
-## 23.06.2025 – Team-Arbeitstreffen
+## 13.06.2025 – Team-Arbeitstreffen
 
 Die Teams präsentierten ihre Zwischenergebnisse und es erfolgte eine neue Arbeitsteilung:
 
@@ -225,5 +225,41 @@ Die Teams präsentierten ihre Zwischenergebnisse und es erfolgte eine neue Arbei
 - Analyse des European AI Act:
   - Welche Kennzeichnungspflichten gelten für KI-generierte Videos?
   - Reicht ein Hinweis in der Fußnote oder ist ein Watermark erforderlich?
+
+## 20.06.2025 – Team-Arbeitstreffen
+
+Die Teams präsentierten ihre aktuellen Arbeitsstände und planten die nächsten Schritte:
+
+
+# ToDos:
+
+
+**Andreas**  
+  - Der bestehende Coqui-TTS-Teil wird überarbeitet, um eine **streambare Variante** zu ermöglichen.  
+  - Wahrscheinlich wird das bisherige Coqui-Framework durch einen direkten Zugriff auf **XTTSv2** ersetzt.
+
+**Leon**  
+  - Untersuchung zur **Ansteuerung von OpenAIs Bildgenerator**, mit dem Ziel, **konsistente Bilder** zu generieren.  
+  - Weiterentwicklung des **Minimalansatzes**: Es wird geprüft, wie zusätzliche **Ausdrucksformen**  integriert werden können.
+
+**Okan**  
+  - Weiterarbeit an der Umsetzung der UI mit **PrimeNG**.  
+  - **Ziel bis nächsten Freitag**:
+    - **Raumerstellung** durch Professoren soweit wie möglich umgesetzt:
+        - **Mindestens**: Raum mit Namen anlegen und Auswahl aller Studierenden anzeigen für den "Studenten zu Kurs hinzufügen" vorgang.
+        - **Zusätzlich**: Daten-Hochladen-Funktion als **Mockup** integrieren und **alle hochgeladenen Daten anzeigen**.
+
+**Silas**
+    - Erste schritten zur multilingualen webseite für eine mvp umsetzung zu nächst deutsch und englisch
+
+**Nils & Paul**  
+  - Weiterentwicklung der **Endpoints zur Raumerstellung** (Raum anlegen + Studenten auflisten).  
+  - Endpoint zum Downloaden von referenzen und generell ermöglichen die referenzen anzuegeben. 
+
+**Doriane & Stella**  
+  - Entscheidung, **wer als Ansprechpartner:in für den EU AI Act** im Projekt fungiert.  
+  - Recherche von **Quellen**, die klären:
+    - Ob **Watermarks** in KI-generierten Videos verpflichtend sind.
+    - Oder ob ein **Hinweis im Footer oder unter dem Video ausreichend** ist.
 
 ---
