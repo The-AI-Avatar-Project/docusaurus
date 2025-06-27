@@ -233,7 +233,6 @@ Die Teams präsentierten ihre aktuellen Arbeitsstände und planten die nächsten
 
 # ToDos:
 
-
 **Andreas**  
   - Der bestehende Coqui-TTS-Teil wird überarbeitet, um eine **streambare Variante** zu ermöglichen.  
   - Wahrscheinlich wird das bisherige Coqui-Framework durch einen direkten Zugriff auf **XTTSv2** ersetzt.
@@ -261,5 +260,63 @@ Die Teams präsentierten ihre aktuellen Arbeitsstände und planten die nächsten
   - Recherche von **Quellen**, die klären:
     - Ob **Watermarks** in KI-generierten Videos verpflichtend sind.
     - Oder ob ein **Hinweis im Footer oder unter dem Video ausreichend** ist.
+
+
+
+## 27.06.2025 – Team-Arbeitstreffen
+
+Die Teams updatete sich via WhatsApp wer wie weit ist.
+
+# ToDos
+
+**Andreas**
+- Audio- und Video-Pipeline Code aufräumen
+- Meeting mit dem Backend-Team zur Anbindung der neuen Video-Pipeline
+
+
+**Leon**
+
+- Drei Themen ausdenken, die komplex genug sind, um sie in einer Lektion zu lernen  
+  **Anforderungen:**  
+  1. Muss für „0815“-Menschen neu sein – also etwas, das man nicht kennt  
+  2. Benötigt keine / wenig visuellen Erklärungen
+  3. Einfach per Multiple-Choice-Test abfragbar
+
+**Okan**
+- **Ziel bis nächsten Freitag:**
+  - **Raumerstellung anpassen**:
+    - Avatar hinterlegen/anpassen  
+      → Eigener Menüpunkt oder bei Zeitmangel: aktuelle Version mit „Skip“-Button
+    - Upload von Materialien im Kurs  
+      → Nur **PDF** zulassen
+    - Raum-Icon festlegen  
+      → Im Raum Erstellungsprozess auswählbar (In kooperation mit Silas der hat sich das ganze ausgedacht)
+    - Anbindung an **Keycloak**  
+      → Gemockte Daten entfernen
+    -  Anbindung an **Backend**  
+      → Nutzerliste aus dem Backend abrufen
+
+**Silas**
+- Okan **unterstützen**, wo möglich
+- Referenzen im chat vernünftig anzeigen
+- Spracheinstellung vorbereiten  
+  → Es reicht aktuell, `"de"` oder `"en"` zu senden (Backend-Endpoint folgt)
+
+
+**Nils & Paul**
+
+- Meeting mit andres bezüglich video audio pipeline
+- Endpoint um nutzer in Kurs einzutragen
+- Endpoint um sprache zu hinterllegen
+
+
+**Doriane & Stella**
+
+- Datenschutzerklärung verfassen  
+  → Inhalt:
+  1. Datenverarbeitung durch **OpenAI**
+  2. Speicherung von **Testergebnissen** zur Evaluation
+
+
 
 ---
