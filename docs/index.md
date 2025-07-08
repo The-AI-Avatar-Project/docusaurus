@@ -318,5 +318,24 @@ Die Teams updatete sich via WhatsApp wer wie weit ist.
   2. Speicherung von **Testergebnissen** zur Evaluation
 
 
+## 04.07.2025 – Team-Arbeitstreffen
+
+Die Teams präsentierten ihre aktuellen Arbeitsstände und planten die nächsten Schritte:
+
+# ToDos
+
+**Nils**  
+- Weitere Kleinigkeiten an der Audio- und Video-Pipeline umsetzen
+
+**Okan**  
+- Abschluss des Raumerstellungs- und Avatar-Anlegeprozesses
+
+**Silas**  
+- Einbindung der neuen Audio- und Video-Pipeline
+
+**Doriane & Stella**  
+- Bewertung von Projektrisiken in Bezug auf den Datenschutz
+
+
 
 ---
