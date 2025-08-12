@@ -1,0 +1,269 @@
+---
+id: system-architecture
+title: Container- und Datenflussdiagramm
+sidebar_label: System Architecture
+---
+
+import {useEffect, useRef, useState} from 'react';
+import panzoom from 'panzoom';
+import Mermaid from '@theme/Mermaid';
+
+# System Architecture
+
+- **Reverse Proxy (Nginx)** ist der einzige Entry-Point für **Frontend** und **Spring API**.  
+- **Keycloak** wird **direkt** vom Client angesprochen (nicht über den Reverse Proxy).  
+- **Services** sind separat: **Whisper STT**, **XTTS TTS**, **Wav2Lip HLS Video**.  
+- **Shared Folders** sind sichtbar, inkl. Mount-Beziehungen.
+
+---
+
+## Diagramm
+
+export default function SystemArchitecture() {
+  const wrapperRef = useRef(null);
+  const [pz, setPz] = useState(null);
+
+  useEffect(() => {
+  let instance;
+  const t = setTimeout(() => {
+    const target = wrapperRef.current?.querySelector('svg') ?? wrapperRef.current;
+    if (!target) return;
+    instance = panzoom(target, {
+      maxZoom: 4,
+      minZoom: 0.5,
+      smoothScroll: true,
+      bounds: false,
+    });
+    setPz(instance);
+
+    // Auto-fit after next paint
+    requestAnimationFrame(() => {
+      const svg = wrapperRef.current?.querySelector('svg');
+      if (!svg || !wrapperRef.current) return;
+      const bbox = svg.getBBox();
+      const w = wrapperRef.current.clientWidth || 1;
+      const margin = 40;
+      const scale = Math.max(0.5, Math.min(4, (w - margin) / Math.max(1, bbox.width)));
+      instance.zoomAbs(0, 0, scale);
+      instance.moveTo(-bbox.x * scale + 20, -bbox.y * scale + 20);
+    });
+  }, 0);
+
+  return () => { clearTimeout(t); if (instance) instance.dispose(); };
+}, []);
+
+
+  const handleZoom = (factor) => pz?.smoothZoom(0, 0, factor);
+  const handleReset = () => { if (!pz) return; pz.moveTo(0, 0); pz.zoomAbs(0, 0, 1); };
+  const handleFitWidth = () => {
+    if (!pz || !wrapperRef.current) return;
+    const svg = wrapperRef.current.querySelector('svg');
+    if (!svg) return;
+    const bbox = svg.getBBox();
+    const w = wrapperRef.current.clientWidth || 1;
+    const margin = 40;
+    const scale = Math.max(0.5, Math.min(4, (w - margin) / Math.max(1, bbox.width)));
+    pz.zoomAbs(0, 0, scale);
+    pz.moveTo(-bbox.x * scale + 20, -bbox.y * scale + 20);
+  };
+
+  const diagramCode = String.raw`
+%%{init:{
+  "theme":"neutral",
+  "themeVariables":{"fontSize":"22px"},   // ← bump to taste (20–24)
+  "flowchart":{"useMaxWidth":true,"nodeSpacing":80,"rankSpacing":120}
+}}%%
+
+flowchart LR
+
+%% ===== Nodes =====
+subgraph Data_Layer
+  direction TB
+  postgres_service[🐋Postgres Service]
+  db[(PostgreSQL and pgVector)]
+  adminer[🐋Adminer]
+end
+
+subgraph Core_Backend
+  direction TB
+  spring_api[🐋Spring API]
+end
+
+subgraph AI_Services
+  direction LR
+  whisper[🐋Whisper]
+  xtts[🐋XTTS v2]
+  wav2lip[🐋Wav2Lip]
+end
+
+subgraph Edge
+  direction TB
+  reverse_proxy[🐋Nginx Reverse Proxy]
+end
+
+subgraph Frontend
+  direction TB
+  frontend[🐋Frontend Build]
+  fe_dist[(frontend_dist volume)]
+end
+
+subgraph Identity
+  direction TB
+  keycloak[🐋Keycloak]
+  kc_init[🐋Keycloak Init Service]
+end
+
+subgraph Certificates
+  direction TB
+  certbot_selfsigned[🐋certbot selfsigned]
+end
+
+subgraph USERS[Users]
+  direction TB
+  client((User Browser))
+end
+
+subgraph Shared_Folders
+  direction LR
+  profiles_vol[(profiles volume)]
+  transfer_vol[(transfer volume)]
+  references_vol[(references path)]
+  video_out_vol[(video_output volume)]
+  certs_vol[(certs volume)]
+end
+
+ai_bus(( ))
+
+%% ===== Relationships =====
+postgres_service --> db
+adminer --- postgres_service
+
+spring_api -- "vector queries" --> postgres_service
+
+spring_api -- "Audio to text" --> whisper
+spring_api -- "Video pipeline trigger" --> ai_bus
+ai_bus --> xtts
+ai_bus --> wav2lip
+reverse_proxy -- "routes to backend" --> spring_api
+client -- "Frontend and Backend request" --> reverse_proxy
+frontend -- "built to" --> fe_dist
+fe_dist -- "mounted into" --> reverse_proxy
+
+spring_api -- "Avatar response text and HLS-video" --> reverse_proxy
+reverse_proxy -- "Frontend and Backend response" --> client
+
+client -- "Authentification / Login" --> keycloak
+spring_api -- "verify request credentials" --> keycloak
+kc_init -- "configure realm and groups" --> keycloak
+keycloak -- "uses same Postgres service" --> postgres_service
+
+certbot_selfsigned -- "creates certs and keys" --> certs_vol
+
+profiles_vol --- spring_api
+profiles_vol --- xtts
+profiles_vol --- wav2lip
+
+transfer_vol --- spring_api
+transfer_vol --- xtts
+
+references_vol --- spring_api
+
+video_out_vol --- spring_api
+video_out_vol --- xtts
+video_out_vol --- wav2lip
+
+certs_vol --- reverse_proxy
+certs_vol --- keycloak
+
+%% ===== Styling =====
+classDef client fill:#ffffff,stroke:#8c8c8c,stroke-dasharray:6 4,color:#1f1f1f;
+classDef edge fill:#f0f5ff,stroke:#3056d3,color:#1f1f1f;
+classDef core fill:#e6fffb,stroke:#08979c,color:#1f1f1f;
+classDef svc  fill:#fff7e6,stroke:#d48806,color:#1f1f1f;
+classDef idp  fill:#fff0f6,stroke:#c41d7f,color:#1f1f1f;
+classDef data fill:#f6ffed,stroke:#389e0d,color:#1f1f1f;
+classDef store fill:#fafafa,stroke:#8c8c8c,color:#1f1f1f,stroke-dasharray:4 3;
+classDef init fill:#f5f5f5,stroke:#8c8c8c,stroke-dasharray:5 3,color:#1f1f1f;
+
+class client client
+class reverse_proxy edge
+class spring_api core
+class whisper,xtts,wav2lip svc
+class keycloak idp
+class kc_init init
+class postgres_service,adminer data
+class profiles_vol,db,transfer_vol,references_vol,video_out_vol,certs_vol,certbot_selfsigned store
+class frontend,fe_dist store
+
+style USERS fill:transparent,stroke:#8c8c8c,stroke-dasharray:6 4
+
+`;
+
+  return (
+    <>
+      <div className="mermaid-toolbar" style={{display:'flex', gap:'0.5rem', alignItems:'center', margin:'0.75rem 0'}}>
+        <button onClick={()=>handleZoom(1.2)} className="button button--sm button--primary">Zoom In</button>
+        <button onClick={()=>handleZoom(1/1.2)} className="button button--sm">Zoom Out</button>
+        <button onClick={handleFitWidth} className="button button--sm">Fit Width</button>
+        <button onClick={handleReset} className="button button--sm button--secondary">Reset</button>
+        <span style={{opacity:0.7, marginLeft:'0.5rem'}}>Mausrad = Zoom, Drag = Verschieben</span>
+      </div>
+
+      <div
+  ref={wrapperRef}
+  style={{
+    width: '100%',            // ← full width
+    border: '1px solid #e5e7eb',
+    borderRadius: 12,
+    overflow: 'hidden',
+    background: 'white',
+    padding: '8px',
+  }}
+>
+  <Mermaid value={diagramCode} />
+</div>
+<div style={{ marginTop: '0.75rem' }}>
+  <button
+    onClick={() => {
+      const svgEl = wrapperRef.current?.querySelector('svg');
+      if (!svgEl) return;
+
+      // Serialize SVG
+      const serializer = new XMLSerializer();
+      const svgStr = serializer.serializeToString(svgEl);
+
+      // Create canvas
+      const canvas = document.createElement('canvas');
+      const bbox = svgEl.getBBox();
+      canvas.width = bbox.width * 2; // 2x for sharper image
+      canvas.height = bbox.height * 2;
+      const ctx = canvas.getContext('2d');
+
+      // Fill background (light gray)
+      ctx.fillStyle = "#f8f9fa"; // white = "#ffffff"
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+      // Load SVG into Image
+      const img = new Image();
+      img.onload = () => {
+        ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+
+        // Trigger download
+        const pngUrl = canvas.toDataURL('image/png');
+        const link = document.createElement('a');
+        link.href = pngUrl;
+        link.download = 'system-architecture.png';
+        link.click();
+      };
+      img.src = 'data:image/svg+xml;base64,' + btoa(unescape(encodeURIComponent(svgStr)));
+    }}
+    className="button button--sm button--primary"
+  >
+    📥 Download Diagram
+  </button>
+</div>
+
+
+    </>
+  );
+}

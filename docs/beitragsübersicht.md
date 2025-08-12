@@ -4,11 +4,11 @@
 - Evaluierung und Integration verschiedener Videofeed-Technologien (SadTalker, MimicTalk, wav2Lip)
 - Umsetzung und API-Anbindung von **wav2Lip**
 - Evaluation und Ansteuerung von **Coqui** und später **XTTSv2** für lokale TTS-Lösungen
-- Bereitstellung der Coqui-TTS-API / XTTSv2-TTS-API für das Backend
+- Bereitstellung der **Coqui-TTS-API** / **XTTSv2-TTS-API** für das Backend
 - Audio-/Video-Pipeline technisch vorbereitet (Docker files und allgemeine tests)
 - Zusammenarbeit mit Backend zur Definition relevanter Endpunkte
-- Mitwirkung an der Keycloak-Integration (Allgemeines testen, Raumstruktur planung, tag einbindung, mockup nutzer generierung und mockup kurse generierung)
-- Frontend unterstützt bei erster nutzung von KeyCloak allgemein
+- Mitwirkung an der **Keycloak**-Integration (Allgemeines testen, Raumstruktur planung, tag einbindung, mockup nutzer generierung und mockup kurse generierung)
+- Frontend unterstützt bei erster nutzung von **KeyCloak** allgemein
 - Dokumentation
 - Teammanagement
 
@@ -16,7 +16,7 @@
 - Evaluierung und Integration verschiedener Videofeed-Technologien (SadTalker, MimicTalk, wav2Lip)
 - Technische Umsetzung des **Minimalansatzes für Videofeed** (zwei Frames + Lautstärke)
 - Integration der Mikrofonfunktion ins Frontend (inkl. Anbindung an externes und später internes Backend)
-- Recherche und prototyping zum video streamen mit ffmeg
+- Recherche und prototyping zum video streamen mit **FFmpeg**
 - Kontinuirliche weiterentwicklung des minimal ansatzes der video pipleine
 
 ## Silas
@@ -36,7 +36,7 @@
 
 ## Doriane
 - Recherche zu TTS technologien
-- Erste experimente mit Coqui
+- Erste experimente mit **Coqui**
 - Recherche zum EU AI Act und zu Kennzeichnungspflichten von KI-Videos
 - Datenschutzanalyse:
   - Erstellung einer **Datenschutzerklärung** 
@@ -53,7 +53,7 @@
 ## Nils
 - Leadengineer im berreich Backend 
 - Integration der unterschidelichen Teilkomponenten
-    - Whisper, Xttsv2, Wav2Lip, Keycloak
+    - **Whisper**, **Xttsv2**, **Wav2Lip**, **Keycloak**
 - Programmierung der Endpoints
 - Zusammenarbeit mit Frontend zur Datenanbindung
 
@@ -62,4 +62,4 @@
 - Experimente mit **ChromaDB** und **PGVector**
 - Mitwirkung bei Endpunkten für Raum- und Kursmanagement
 - Zusammenarbeit mit Nils bei Audio-/Videopipeline-Anbindung
-- Beteiligung an Keycloak-Backend-Anbindung
+- Beteiligung an **Keycloak**-Backend-Anbindung

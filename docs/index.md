@@ -336,6 +336,38 @@ Die Teams präsentierten ihre aktuellen Arbeitsstände und planten die nächsten
 **Doriane & Stella**  
 - Bewertung von Projektrisiken in Bezug auf den Datenschutz
 
+## 21.07.2025 – Vorstellung beim Professor
+Allgemein wenig updates aufgrund von Prüfungsphase 
+
+** Andreas **
+- Angefangen abschließende Dokumentaion zu schreiben 
+
+** Silas **
+- Kleinigkeiten im frontend
+
+** Okan **
+- Fast fertig mit frontend nur noch endpoin anstuern um refernz audio hochzuladen
+
+** Nils ** 
+- Backend soweit abgeschlossen 
+
+** Doriane Stelle **
+- Datenschutzerköärung geschrieben und Risiko klasse definiert
+
+ToDo
+
+** Nils **
+- Zugang zu server beantragen
+
+** Silas **
+- Videopipeline anbinden 
+
+** Okan **
+- Audio referez hochladbar machen
+
+** Andreas ** 
+-Technical debt und Mermaid diagramme anfangen
+- Professoren anschreiben wegen FAQ - emails und wie der zeitaufwand ist
 
 
 ---
