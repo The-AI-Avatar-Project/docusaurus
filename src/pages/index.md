@@ -14,24 +14,16 @@ _Institute of Computer Science, Hochschule Ruhr West, Bottrop_
 Im heutigen Hochschulkontext stehen Studierende und Lehrende vor vielen Herausforderungen:  
 - Personalisierte Betreuung  
 - Flexibler Zugriff auf Lernmaterialien  
-- Effiziente Kursorganisation  
+- Multilinguales Studieren
 
-Unser Projekt setzt genau hier an – mit einem **intelligenten virtuellen Studienassistenten**, einem **KI-Avatar**, der als persönlicher Begleiter für Studierende fungiert.
-
----
-
-## 🎯 Ziele
-- **Studierende** erhalten jederzeit maßgeschneiderte Antworten zu Vorlesungsinhalten, Terminen und Prüfungen.  
-- **Virtuelle Lernhilfe**: individuelle Übungen und Lernpläne basierend auf den Materialien der Lehrenden.  
-- **Professor:innen** können eigene Avatare erstellen, die Stimme, Sprache und digitales Abbild übernehmen.  
+Unser Projekt setzt genau hier an – mit einem einem **KI-Avatar**, der als persönlicher Begleiter für Studierende fungiert.
 
 ---
-
 ## 📖 Mehr Details
 
 Im **[Projekt Backlog](/docs/intro)** finden sich weitere Details, unter anderem zu:
+- System Architecture  
 - Projektbeiträgen & Teamübersicht  
 - Meeting-Logs  
-- System Architecture  
 - Technical Debt  
 - Use Cases
