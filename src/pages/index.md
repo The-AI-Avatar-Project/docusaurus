@@ -21,7 +21,7 @@ Unser Projekt setzt genau hier an – mit einem einem **KI-Avatar**, der als per
 ---
 ## 📖 Mehr Details
 
-Im **[Projekt Backlog](/docs/intro)** finden sich weitere Details, unter anderem zu:
+Im **[Projekt Backlog](/docs/system-architecture)** finden sich weitere Details, unter anderem zu:
 - System Architecture  
 - Projektbeiträgen & Teamübersicht  
 - Meeting-Logs  
