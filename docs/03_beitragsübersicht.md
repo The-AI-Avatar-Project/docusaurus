@@ -11,6 +11,9 @@
 - Frontend unterstützt bei erster nutzung von **KeyCloak** allgemein
 - Dokumentation
 - Teammanagement
+- Auswerung 60 evaluationsfragen
+- Text abschnitte whisper, keykloak, videofeed
+- Text Feedback und Korrekturen 
 
 ## Leon
 - Evaluierung und Integration verschiedener Videofeed-Technologien (SadTalker, MimicTalk, wav2Lip)
@@ -18,6 +21,10 @@
 - Integration der Mikrofonfunktion ins Frontend (inkl. Anbindung an externes und später internes Backend)
 - Recherche und prototyping zum video streamen mit **FFmpeg**
 - Kontinuirliche weiterentwicklung des minimal ansatzes der video pipleine
+- Auswerung 60 evaluationsfragen
+- Textabschnitte KeyKloak, Vidoefeed, Evaluation strategy
+- Text Feedback und Korrekturen 
+
 
 ## Silas
 - Konzeption des UIs 
@@ -27,12 +34,20 @@
 - Umsetzung der Anzeige von Chat-Referenzen
 - Zusammenarbeit mit Backend zur Definition relevanter Endpunkte
 - Vorbereitung auf Mehrsprachigkeit der Anwendung
+- Auswerung 60 evaluationsfragen
+- Textabschnitte State of the art, Frontend, conclusion, fututr direction
+- Text Feedback und Korrekturen 
+
 
 ## Okan
 - Konzeption des UIs 
 - Umsetzung der Einstellungs-UI mit **PrimeNG**
 - Konzeption und Umsetzung des Raum-Erstellungsprozesses (UI)
 - Konzeption und Umsetzung des Avatar anlege prozesses (UI)
+- Auswerung 60 evaluationsfragen
+- Textabschnitte Frontend, Evaluation results
+- Text Feedback und Korrekturen 
+
 
 ## Doriane
 - Recherche zu TTS technologien
@@ -41,6 +56,10 @@
 - Datenschutzanalyse:
   - Erstellung einer **Datenschutzerklärung** 
   - Bewertung des Datneschutz riskos
+- Auswerung 60 evaluationsfragen
+- Textabschnitte Abstract, Introduction, State of the art, Duscussion -> Datenschhutz + ai act
+- Text Feedback und Korrekturen 
+
 
 ## Stella
 - Recherche zu TTS technologien
@@ -49,6 +68,10 @@
 - Datenschutzanalyse:
   - Erstellung einer **Datenschutzerklärung** 
   - Bewertung des Datneschutz riskos
+- Auswerung 60 evaluationsfragen
+- Textabschnitte State of the art,  Duscussion -> Datenschhutz + ai act
+- Text Feedback und Korrekturen 
+
 
 ## Nils
 - Leadengineer im berreich Backend 
@@ -56,6 +79,10 @@
     - **Whisper**, **Xttsv2**, **Wav2Lip**, **Keycloak**
 - Programmierung der Endpoints
 - Zusammenarbeit mit Frontend zur Datenanbindung
+- Auswerung 40 evaluationsfragen
+- Textabschnitte Architecture -Übersicht -Backend 
+- Text Feedback und Korrekturen 
+
 
 ## Paul
 - Unterstützung beim Backend-Aufbau
@@ -63,3 +90,7 @@
 - Mitwirkung bei Endpunkten für Raum- und Kursmanagement
 - Zusammenarbeit mit Nils bei Audio-/Videopipeline-Anbindung
 - Beteiligung an **Keycloak**-Backend-Anbindung
+- Auswerung 60 evaluationsfragen
+- Textabschnitte Abstract, Introduction Architecture -Backend 
+- Text Feedback und Korrekturen 
+

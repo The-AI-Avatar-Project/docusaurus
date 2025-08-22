@@ -2,9 +2,9 @@
 🔵: Wird dran gearbeite
 🟢: Umgesetzt
 🟠: Optionl
+🔴: Nicht umgesetzt
 
-
-## 1. Virtueller Studienassistent 🔵
+## 1. Virtueller Studienassistent 🟢
 
 **Zielgruppe**: Studierende  
 **Need**: Studierende möchten individuelle Fragen mit einem Avatar klären können.  
@@ -16,7 +16,7 @@
 
 ---
 
-## 2. Virtuelle Lernhelfer
+## 2. Virtuelle Lernhelfer 🔴
 
 **Zielgruppe**: Studierende  
 **Need**: Individuelle Lernmaterialien und Lernpläne  
@@ -30,7 +30,7 @@
 
 ---
 
-## 3. Spracheinstellung
+## 3. Spracheinstellung 🟢
 
 **Zielgruppe**: Internationale Studierende  
 **Need**: Inhalte müssen in verschiedenen Sprachen verfügbar sein  
@@ -43,7 +43,7 @@
 
 ---
 
-## 4. Quellenverweis
+## 4. Quellenverweis 🟢
 
 **Zielgruppe**: Studierende und Professoren  
 **Need**: Antworten des Avatars müssen nachvollziehbar und belegbar sein  
@@ -56,7 +56,7 @@
 
 ---
 
-## 5. Avatar-Generierung 🔵
+## 5. Avatar-Generierung 🟢
 
 **Zielgruppe**: Professoren  
 **Need**: Professoren möchten einen personalisierten Avatar für ihr Modul erstellen  
@@ -69,7 +69,7 @@
 
 ---
 
-## 6. Raumgestaltung 🔵
+## 6. Raumgestaltung 🟢
 
 **Zielgruppe**: Professoren  
 **Need**: Kursspezifische Wissensräume sollen individuell gestaltet werden können  
@@ -82,7 +82,7 @@
 
 ---
 
-## 7. Skills festlegen
+## 7. Skills festlegen 🔴
 
 **Zielgruppe**: Professoren  
 **Need**: Kontrolle über die Funktionen des Avatars  
@@ -101,7 +101,7 @@
 
 ---
 
-## 8. Accounts und Rechteverwaltung
+## 8. Accounts und Rechteverwaltung 🟢
 
 **Zielgruppe**: Studierende und Professoren  
 **Need**: Unterschiedliche Funktionen je nach Nutzerrolle  
@@ -114,32 +114,4 @@
 ---
 
 ## MVP-Planung
-
-## MVP v1 – Technische Machbarkeit
-
-In der ersten Version des Systems steht die **technische Machbarkeit** im Vordergrund. Ziel ist es, eine minimale, aber funktionierende End-to-End-Plattform zu realisieren, auf der sowohl Professoren als auch Studierende erste Kernfunktionen nutzen können.
-
-### Funktionen für Professoren
-
-Professoren sollen die Möglichkeit haben:
-
-- 🔜 Einen eigenen Avatar zu erstellen, der als digitales Abbild ihrer Person fungiert.
-- ✅ Mindestens eine Wissensquelle (z. B. ein PDF, Foliensatz oder Text) pro Raum zu hinterlegen, um dem Avatar eine Grundlage für Antworten zu geben.
-- 🔜 Unterschiedliche virtuelle Räume (Kurse) zu eröffnen, in denen jeweils ein eigener Avatar mit spezifischem Wissen agiert.
-
-### Funktionen für Studierende
-
-Studierende sollen die Möglichkeit haben:
-
-- 🔜 Eine einfache Benutzeroberfläche (UI) aufzurufen, über die sie verfügbare Kurse auswählen können.
-- 🔜 Mit dem Avatar innerhalb eines Kurses zu interagieren, wobei der Avatar nur auf das vom Professor bereitgestellte Wissen in diesem Raum zugreifen kann.
-
-
-## MVP v2
-
-- Lernhelfer (Use Case 2)  
-- Termin-Integration  
-- Skill-Steuerung  
-- Lernplan-Erstellung  
-- Aufgaben-Generierung  
-- Weitere Avatar-Skills
+Zu Beginn des Projekts entstand die Idee, in MVP-Versionen zu arbeiten und dabei unterschiedliche Meilensteine anzusteuern. Das wirkte anfangs realistisch, da wir noch sehr einfach dachten: „Man muss das ja nur installieren, dann funktioniert es.“ Entsprechend gingen wir davon aus, dass wir uns schrittweise von Version zu Version hangeln könnten. In der Praxis zeigte sich jedoch, dass die Umsetzung deutlich komplexer war. Statt klar abgetrennter MVPs hat sich unsere Arbeitsweise zunehmend in Richtung Scrum entwickelt: Jeder arbeitete an seinen Teilaufgaben, bis die jeweilige Funktionalität tatsächlich umgesetzt war.

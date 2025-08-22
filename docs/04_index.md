@@ -369,5 +369,14 @@ ToDo
 -Technical debt und Mermaid diagramme anfangen
 - Professoren anschreiben wegen FAQ - emails und wie der zeitaufwand ist
 
+## Dynamisch arbeitsohase ohne spezifische meetings
+Ab hier wurde dynamisch gearbeitet das teil schritte nicht mehr vom ganzem team besprochen werden musste einzelen
+Einzig die Kapitel ujnterteilung fand in einem meeting statt das jeder/e wusste was zu bearbeiten ist. Heufig wurden teil ergebnisse besprochen mit Andreas und bereits dort teil feedback
+gegeben.
 
+** Leon **
+Ab dem 27.08 übernimmt Leon die Leiten Rolle und sorgt für die einreichung der Texte fragen und entscheidungen bis zum euinschließlich 31.08 fallen in seinen Aufgaben berreich. 
+
+** Ersteinreichung am 27.08 **
+Am 27.08 soll die erste einreichung des Textes erfolgen um feedback des Dozenten zu bekommen. Basierend auf dem feedback werden die texte wieder angepasst.
 ---
