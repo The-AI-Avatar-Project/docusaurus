@@ -10,7 +10,7 @@
 - Bildung von Arbeitsgruppen:
   - **Videofeed**: Andreas & Leon  
   - **Frontend**: Okan & Silas  
-  - **TTS / STT**: Doriane & Stella  
+  - **TTS / STT**: Doriane & Stelle  
   - **Backend**: Nils & Paul
 - Aufgabe: Technischen ersten aufschlag erarbeiten. Was für tools wie nutzen?
 
@@ -180,7 +180,7 @@ Frage tokennutzung wie können wir die kosten ermitteln wurde angesprochen
 Die Teams präsentierten ihre Zwischenergebnisse und es erfolgte eine neue Arbeitsteilung:
 
 # TTS / STT  
-- Stella & Nils OpenVoice ergebniss: Nicht funkunell nutzbar für dieses Projekt aufgund von mangelnden Sprach optionen.  
+- Stelle & Nils OpenVoice ergebniss: Nicht funkunell nutzbar für dieses Projekt aufgund von mangelnden Sprach optionen.  
 - Andreas & Dorinae: Coqui wurde erfolgreich mit einer api ansteuerbar gestaltet und an Nils weitergegeben für das backend.
 # Videofeed  
 - Wav2Lip wurde erfolgreich mit einer api ansteuerbar gestaltet und an Nils weitergegeben für das backend.
@@ -221,7 +221,7 @@ Die Teams präsentierten ihre Zwischenergebnisse und es erfolgte eine neue Arbei
 - Überarbeitung der README.
 - Nach Abschluss der obigen Aufgaben: Zusammenarbeit mit Okan zur Umsetzung der Profil- und Raum-Endpunkte.
 
-**Doriane & Stella**
+**Doriane & Stelle**
 - Analyse des European AI Act:
   - Welche Kennzeichnungspflichten gelten für KI-generierte Videos?
   - Reicht ein Hinweis in der Fußnote oder ist ein Watermark erforderlich?
@@ -255,7 +255,7 @@ Die Teams präsentierten ihre aktuellen Arbeitsstände und planten die nächsten
   - Weiterentwicklung der **Endpoints zur Raumerstellung** (Raum anlegen + Studenten auflisten).  
   - Endpoint zum Downloaden von referenzen und generell ermöglichen die referenzen anzuegeben. 
 
-**Doriane & Stella**  
+**Doriane & Stelle**  
   - Entscheidung, **wer als Ansprechpartner:in für den EU AI Act** im Projekt fungiert.  
   - Recherche von **Quellen**, die klären:
     - Ob **Watermarks** in KI-generierten Videos verpflichtend sind.
@@ -310,7 +310,7 @@ Die Teams updatete sich via WhatsApp wer wie weit ist.
 - Endpoint um sprache zu hinterllegen
 
 
-**Doriane & Stella**
+**Doriane & Stelle**
 
 - Datenschutzerklärung verfassen  
   → Inhalt:
@@ -333,39 +333,39 @@ Die Teams präsentierten ihre aktuellen Arbeitsstände und planten die nächsten
 **Silas**  
 - Einbindung der neuen Audio- und Video-Pipeline
 
-**Doriane & Stella**  
+**Doriane & Stelle**  
 - Bewertung von Projektrisiken in Bezug auf den Datenschutz
 
 ## 21.07.2025 – Vorstellung beim Professor
 Allgemein wenig updates aufgrund von Prüfungsphase 
 
-** Andreas **
+**Andreas**
 - Angefangen abschließende Dokumentaion zu schreiben 
 
-** Silas **
+**Silas**
 - Kleinigkeiten im frontend
 
-** Okan **
+**Okan**
 - Fast fertig mit frontend nur noch endpoin anstuern um refernz audio hochzuladen
 
-** Nils ** 
+**Nils** 
 - Backend soweit abgeschlossen 
 
-** Doriane Stelle **
+**Doriane Stelle**
 - Datenschutzerköärung geschrieben und Risiko klasse definiert
 
 ToDo
 
-** Nils **
+**Nils**
 - Zugang zu server beantragen
 
-** Silas **
+**Silas**
 - Videopipeline anbinden 
 
-** Okan **
+**Okan**
 - Audio referez hochladbar machen
 
-** Andreas ** 
+**Andreas** 
 -Technical debt und Mermaid diagramme anfangen
 - Professoren anschreiben wegen FAQ - emails und wie der zeitaufwand ist
 
@@ -374,9 +374,29 @@ Ab hier wurde dynamisch gearbeitet das teil schritte nicht mehr vom ganzem team 
 Einzig die Kapitel ujnterteilung fand in einem meeting statt das jeder/e wusste was zu bearbeiten ist. Heufig wurden teil ergebnisse besprochen mit Andreas und bereits dort teil feedback
 gegeben.
 
-** Leon **
-Ab dem 27.08 übernimmt Leon die Leiten Rolle und sorgt für die einreichung der Texte fragen und entscheidungen bis zum euinschließlich 31.08 fallen in seinen Aufgaben berreich. 
+**Leon**
+- Ab dem 27.08 übernimmt Leon die Leiten Rolle und sorgt für die einreichung der Texte fragen und entscheidungen bis zum euinschließlich 31.08 fallen in seinen Aufgaben berreich. 
 
-** Ersteinreichung am 27.08 **
-Am 27.08 soll die erste einreichung des Textes erfolgen um feedback des Dozenten zu bekommen. Basierend auf dem feedback werden die texte wieder angepasst.
+**Ersteinreichung am 27.08**
+- Am 27.08 soll die erste einreichung des Textes erfolgen um feedback des Dozenten zu bekommen. Basierend auf dem feedback werden die texte wieder angepasst.
+
+## Feedback KW 35
+- Erste Abgabe des Papers an Prof. Gedikli, Zugangsdaten zur Anwendung bereitgestellt, ausführliches Feedback (ca. 70 Kommentare) erhalten; Rückmeldung zu Avatar-Erstellung (Stimme nicht übernommen, Bildgrößenprobleme), Bugs in der Angular-App (Kurse anlegen, Fragen/Antworten hinterlegen, Fehlerausgaben), Wunsch nach Dokumentation und Verbesserung der Benutzerfreundlichkeit.
+
+## KW 36
+Nach email austausch wurde festgeklegt noch einmal am Quellcode zu arbeiten.
+- Anzeige einer Bestätigung, sobald der AI-Avatar erstellt wurde.
+- Kontrollieren, woher die Websocket Error Meldung kommt.
+- Anpassung der Ladepunkte im Chat.
+- Erweiterung des Backends, sodass die Download-Funktionalität der Referenzen auch bei Umlauten korrekt funktioniert.
+- Implementierung einer Prüfung bei der Avatar-Erstellung, um sicherzustellen, dass das hochgeladene Bild das richtige Format hat.
+
+## 08.09.2025 – Abschluss Teammeeting mit Professor
+Klärung offener missverständnisse
+- Avatar seperat von der Ausarbeitung viorbeireiten für ein LinkedIn post
+- Paper nur anpassen so dass es zu der Forschungsfrage passt
+- Abgabe enddatum für das Paper 30.09.2025
+
+## 10.09.2025 - LinkedIn Post
+Herr Gedikli postet auf LinkedIn das Projekt
 ---
