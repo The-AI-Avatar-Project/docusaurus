@@ -61,7 +61,7 @@
 - Text Feedback und Korrekturen 
 
 
-## Stella
+## Stelle
 - Recherche zu TTS technologien
 - Erste experimente mit **OpenVoice**
 - Recherche zum EU AI Act und zu Kennzeichnungspflichten von KI-Videos
