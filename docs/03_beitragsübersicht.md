@@ -5,12 +5,12 @@
 - Umsetzung und API-Anbindung von **wav2Lip**
 - Evaluation und Ansteuerung von **Coqui** und später **XTTSv2** für lokale TTS-Lösungen
 - Bereitstellung der **Coqui-TTS-API** / **XTTSv2-TTS-API** für das Backend
-- Audio-/Video-Pipeline technisch vorbereitet (Docker files und allgemeine tests)
+- Audio-/Video-Pipeline technisch vorbereitet (Docker files und allgemeine Tests)
 - Zusammenarbeit mit Backend zur Definition relevanter Endpunkte
-- Mitwirkung an der **Keycloak**-Integration (Allgemeines testen, Raumstruktur planung, tag einbindung, mockup nutzer generierung und mockup kurse generierung)
+- Mitwirkung an der **Keycloak**-Integration (Allgemeines testen, Raumstruktur Planung, Tag Einbindung, Mockup-Nutzergenerierung und Mockup-Kurse Generierung)
 - Frontend unterstützt bei erster nutzung von **KeyCloak** allgemein
 - Dokumentation
-- Teammanagement
+- Team management
 - Auswerung 60 evaluationsfragen
 - Text abschnitte whisper, keykloak, videofeed
 - Text Feedback und Korrekturen 
@@ -20,7 +20,7 @@
 - Technische Umsetzung des **Minimalansatzes für Videofeed** (zwei Frames + Lautstärke)
 - Integration der Mikrofonfunktion ins Frontend (inkl. Anbindung an externes und später internes Backend)
 - Recherche und prototyping zum video streamen mit **FFmpeg**
-- Kontinuirliche weiterentwicklung des minimal ansatzes der video pipleine
+- Kontinuierliche Weiterentwicklung des minimal Ansatzes der Videopipleine
 - Auswerung 60 evaluationsfragen
 - Textabschnitte KeyKloak, Vidoefeed, Evaluation strategy
 - Text Feedback und Korrekturen 
@@ -34,8 +34,8 @@
 - Umsetzung der Anzeige von Chat-Referenzen
 - Zusammenarbeit mit Backend zur Definition relevanter Endpunkte
 - Vorbereitung auf Mehrsprachigkeit der Anwendung
-- Auswerung 60 evaluationsfragen
-- Textabschnitte State of the art, Frontend, conclusion, fututr direction
+- Auswertung 60 Evaluationsfragen
+- Textabschnitte State of the art, Frontend, conclusion, future direction
 - Text Feedback und Korrekturen 
 
 
@@ -43,43 +43,43 @@
 - Konzeption des UIs 
 - Umsetzung der Einstellungs-UI mit **PrimeNG**
 - Konzeption und Umsetzung des Raum-Erstellungsprozesses (UI)
-- Konzeption und Umsetzung des Avatar anlege prozesses (UI)
-- Auswerung 60 evaluationsfragen
+- Konzeption und Umsetzung des Avatar anlege Prozesses (UI)
+- Auswerung 60 Evaluationsfragen
 - Textabschnitte Frontend, Evaluation results
 - Text Feedback und Korrekturen 
 
 
 ## Doriane
-- Recherche zu TTS technologien
-- Erste experimente mit **Coqui**
+- Recherche zu TTS Technologien
+- Erste Experimente mit **Coqui**
 - Recherche zum EU AI Act und zu Kennzeichnungspflichten von KI-Videos
 - Datenschutzanalyse:
   - Erstellung einer **Datenschutzerklärung** 
-  - Bewertung des Datneschutz riskos
-- Auswerung 60 evaluationsfragen
-- Textabschnitte Abstract, Introduction, State of the art, Duscussion -> Datenschhutz + ai act
+  - Bewertung des Datneschutzriskos
+- Auswertung 60 Evaluationsfragen
+- Textabschnitte Abstract, Introduction, State of the art, Duscussion -> Datenschutz + ai act
 - Text Feedback und Korrekturen 
 
 
 ## Stelle
-- Recherche zu TTS technologien
-- Erste experimente mit **OpenVoice**
+- Recherche zu TTS Technologien
+- Erste Experimente mit **OpenVoice**
 - Recherche zum EU AI Act und zu Kennzeichnungspflichten von KI-Videos
 - Datenschutzanalyse:
   - Erstellung einer **Datenschutzerklärung** 
-  - Bewertung des Datneschutz riskos
-- Auswerung 60 evaluationsfragen
-- Textabschnitte State of the art,  Duscussion -> Datenschhutz + ai act
+  - Bewertung des Datneschutzriskos
+- Auswertung 60 Evaluationsfragen
+- Textabschnitte State of the art,  Duscussion -> Datenschutz + ai act
 - Text Feedback und Korrekturen 
 
 
 ## Nils
-- Leadengineer im berreich Backend 
-- Integration der unterschidelichen Teilkomponenten
+- Leadengineer im Bereich Backend 
+- Integration der unterschiedlichen Teilkomponenten
     - **Whisper**, **Xttsv2**, **Wav2Lip**, **Keycloak**
 - Programmierung der Endpoints
 - Zusammenarbeit mit Frontend zur Datenanbindung
-- Auswerung 40 evaluationsfragen
+- Auswertung 40 Evaluationsfragen
 - Textabschnitte Architecture -Übersicht -Backend 
 - Text Feedback und Korrekturen 
 
@@ -90,7 +90,7 @@
 - Mitwirkung bei Endpunkten für Raum- und Kursmanagement
 - Zusammenarbeit mit Nils bei Audio-/Videopipeline-Anbindung
 - Beteiligung an **Keycloak**-Backend-Anbindung
-- Auswerung 60 evaluationsfragen
+- Auswertung 60 Evaluationsfragen
 - Textabschnitte Abstract, Introduction Architecture -Backend 
 - Text Feedback und Korrekturen 
 
